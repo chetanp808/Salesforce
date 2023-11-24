@@ -1,0 +1,11 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+    <aura:attribute name = "myText" type = "String" default = "Amit"/>
+    
+    <div>
+    	<p> {!v.myText} </p>
+    
+        <img src="{!$Resource.walmartlogo}"/>
+
+    </div>
+    <lightning:input type="text" label="Enter name" value="{!v.myText}"/>
+</aura:component>

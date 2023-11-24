@@ -1,0 +1,6 @@
+<apex:page controller="myClass" >
+<apex:form >
+<apex:inputtext value="{!myClass.name}" />
+<apex:commandButton value="Save" action="{!doSave}"/>
+</apex:form>
+</apex:page>

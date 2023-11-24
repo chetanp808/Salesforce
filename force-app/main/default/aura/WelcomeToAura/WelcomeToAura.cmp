@@ -1,0 +1,7 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<div>
+        
+        <img src="{!$Resource.glogo}"/>
+    	<p> Welcome in the world of Aura component developement in-depth with legend Amit. </p>
+    </div>
+</aura:component>

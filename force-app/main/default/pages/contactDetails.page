@@ -1,0 +1,15 @@
+<apex:page standardController="Contact" recordSetVar="con" >
+      
+      <apex:form >
+          <apex:pageblock title="Contact Information">
+              <apex:pageblockTable value="{!con}" var="c">
+                  <apex:column value="{!c.name}"/>
+              </apex:pageblockTable>
+              <apex:commandButton value="First" action="{!first}"/>
+              <apex:commandButton value="Next" action="{!next}"/>
+              <apex:commandButton value="Previous" action="{!previous}"/>
+              <apex:commandButton value="Last" action="{!last}"/>
+          </apex:pageblock>
+      </apex:form>
+      
+</apex:page>

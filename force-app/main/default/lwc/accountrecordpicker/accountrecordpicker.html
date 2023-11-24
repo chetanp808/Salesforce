@@ -1,0 +1,14 @@
+<template>
+    <lightning-card>
+        <div class="slds-var-p-around_medium">
+            <lightning-record-picker
+                label="Accounts"
+                placeholder="Search Accounts"
+                object-api-name="Account"
+                onchange={handleChange}>
+            </lightning-record-picker>
+                Selected Account Id is {selectedAccountId}
+            
+        </div>
+    </lightning-card>
+</template>

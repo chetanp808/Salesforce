@@ -1,0 +1,11 @@
+<template>
+    <div>
+        <lightning-input type="text" label="Student Name" value={accName} onchange={handleOnChangesName}></lightning-input>
+        <lightning-input type="text" label="Student Father Name" value={accPhone} onchange={handleOnChangesFName}></lightning-input>
+        <lightning-input type="text" label="Student Email" value={accBillingStreet} onchange={handleOnChangesEmail}></lightning-input>
+        <lightning-input type="text" label="Student Fees" value={accBillingCity} onchange={handleOnChangesFees}></lightning-input>
+
+        <lightning-button variant="brand" label="inser student" title="Click here to insert student" onclick={inserttudent}></lightning-button>
+
+    </div>
+</template>

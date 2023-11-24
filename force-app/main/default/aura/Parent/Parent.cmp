@@ -1,0 +1,9 @@
+<aura:component >
+    <p>
+    	I am from Parent Component
+    </p>
+    
+    <c:Child Mytext1="See the maic i am from parent value"/>
+    <aura:handler name="myEvt" event="c.MyEvent" action="{!c.handleEvent}" />
+    
+</aura:component>

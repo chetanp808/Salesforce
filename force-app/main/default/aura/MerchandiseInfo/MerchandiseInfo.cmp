@@ -1,0 +1,21 @@
+<aura:component controller="MerchInfo" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+	<aura:attribute type="String" name="formHeading" default="Merchandise Information"/>
+<aura:attribute type="String" name="merchName" default=""/>
+<aura:attribute type="String" name="merchDesc" default=""/>
+<aura:attribute type="String" name="MerchStock" default=""/>
+<aura:attribute type="String" name="MerchPrice" default=""/>
+<div class="slds-text-align_center">
+<div class="slds-text-heading_medium">
+    	{!v.formHeading}
+</div>
+</div>
+<div class="slds-align_absolute-center">
+<div class="slds-size_3-of-8">
+<lightning:input type="text" label="Enter Merchandise Name" value="{!v.merchName}"/>
+<lightning:input type="text" label="Enter Merchandise Desc" value="{!v.merchDesc}"/>
+<lightning:input type="text" label="Enter Merchandise Stock" value="{!v.MerchStock}"/>
+<lightning:input type="text" label="Enter Merchandise Price" value="{!v.MerchPrice}"/>
+<lightning:button label="{!$Label.c.Save}" name="studentInfo" onclick="{!c.myMethod}"/>
+</div>
+</div>
+</aura:component>

@@ -1,0 +1,9 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction" access="global" >
+<aura:attribute name="Username" type="String" default="Pavan"/>
+<div>
+<p>
+        	Welcome {!v.Username}!
+</p>
+<img src="{!$Resource.walmartlogo}"/>
+</div>
+</aura:component>

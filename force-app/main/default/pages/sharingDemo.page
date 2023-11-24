@@ -1,0 +1,6 @@
+<apex:page controller="myContcts" >
+      <apex:form >
+          <apex:inputtext value="{!myContcts.name}" />
+          <apex:commandButton value="Save" action="{!doSave}"/>
+      </apex:form>
+</apex:page>

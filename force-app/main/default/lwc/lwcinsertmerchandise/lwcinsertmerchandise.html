@@ -1,0 +1,11 @@
+<template>
+    <div>
+        <lightning-input type="text" label="Merchandise Name" value={merName} onchange={handleOnChangesName}></lightning-input>
+        <lightning-input type="text" label="Merchandise Desc" value={merDec} onchange={handleOnChangemerDesc}></lightning-input>
+        <lightning-input type="text" label="Merchandise Stock" value={merStock} onchange={handleOnChangemerStock}></lightning-input>
+        <lightning-input type="text" label="Merchandise Price" value={merPrice} onchange={handleOnChangemerPrice}></lightning-input>
+
+        <lightning-button variant="brand" label="inser Merchandise" title="Click here to insert Merchandise" onclick={insertMerchandise}></lightning-button>
+
+    </div>
+</template>

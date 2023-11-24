@@ -1,0 +1,18 @@
+<apex:page StandardController="Lead" >
+<apex:SectionHeader title="Create new Lead" subtitle="Lead Info"/>
+<apex:form >
+<apex:pageBlock title="Lead Information">
+<apex:pageBlockSection columns="3" >
+<apex:inputField value="{!lead.FirstName}"  label="First Name"/>
+<apex:inputField value="{!lead.LastName}"  label="Last Name"/>
+<apex:inputField value="{!lead.Company}"  label="Company"/>
+<apex:inputField value="{!lead.Email}"   label="Email" />
+<apex:inputField value="{!lead.Phone}"  label="Phone"/>
+</apex:pageBlockSection>     
+
+<apex:pageBlockButtons >
+<apex:commandButton action="{!save}" value="save"/>
+</apex:pageBlockButtons>
+</apex:pageBlock>
+</apex:form>
+</apex:page>

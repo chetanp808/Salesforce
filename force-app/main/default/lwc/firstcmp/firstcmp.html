@@ -1,0 +1,11 @@
+<template>
+    <div>
+        <p>
+         Welcome to into the world of LWC in depth developement with {name}.
+        </p>
+        <lightning-input type="text" label="Enter Name" value={name} onchange={handleOnChange}></lightning-input>
+        <lightning-input type="checkbox" label="isActive" value={isActive} onchange={conditionalRender}></lightning-input>
+        <template lwc:if={isActive}>This is my First Component.</template>
+        <template lwc:else>This is my Second Component.</template>
+    </div>
+</template>
